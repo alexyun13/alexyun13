@@ -1,0 +1,68 @@
+body {
+    font-family: Montserrat, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+    h1, h2, h3 {
+        color: #007bff;
+        }
+        /* Style commun pour h1, h2 et h3 */
+h1, h2, h3 {
+    color: #007bff;
+    }
+    /* Style spécifique pour centrer h1 et h2 */
+    h1, h2 {
+    text-align: center;
+    }
+    /* h3 conserve les styles communs mais n'aura pas de règle de centrage spécifique, donc il ne sera pas centré à moins que vous n'ajoutiez une autre règle pour cela. */
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.223);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            img {
+                display: block; /* Assure que l'image est traitée comme un bloc pour permettre le centrage */
+                margin: 20px auto; /* Ajoute une marge supérieure et inférieure de 20px et centre l'image horizontalement */
+                max-width: 300px; /* La largeur maximale de l'image est de 300px */
+                width: 100%; /* Permet à l'image de s'ajuster à la largeur de son conteneur, sans dépasser 300px */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+                }
+                .dark-theme {
+                    background-color: #333;
+                    color: white;
+                  }
+#change-theme-btn {
+background-color: #6200EA; /* Couleur de fond violette */
+color: white; /* Texte blanc */
+border: none; /* Pas de bordure */
+padding: 10px 20px; /* Espacement intérieur pour agrandir le bouton */
+text-transform: uppercase; /* Texte en majuscules */
+font-family: 'Roboto', sans-serif; /* Police Material Design */
+font-size: 16px; /* Taille de la police */
+cursor: pointer; /* Curseur en forme de pointeur au survol */
+transition: background-color 0.3s, box-shadow 0.3s; /* Animation douce pour le fond et l'ombre */
+box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Ombre douce */
+border-radius: 4px; /* Bords arrondis */
+display: block; /* Affichage en bloc pour permettre le centrage */
+margin: 20px auto; /* Marge automatique pour centrer horizontalement */
+}
+@media screen and (max-width: 768px) {
+    /* Votre CSS pour les écrans jusqu'à 768px de large */
+    body {
+    padding: 20px;
+    }
+    #change-theme-btn {
+    width: 100%; /* Bouton pleine largeur */
+    margin: 0; /* Ajustement des marges */
+    }
+    }
+    section {
+        width: 90%;
+        max-width: 1200px; /* Largeur maximale pour éviter que la section ne devienne trop large sur les grands écrans */
+        margin: auto; /* Centrer la section */
+        }
